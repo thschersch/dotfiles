@@ -9,8 +9,8 @@ Disable-BingSearch
 Disable-GameBarTips
 
 Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -EnableShowProtectedOSFiles -EnableShowFileExtensions
-Set-TaskbarOptions -Size Small -Dock Bottom -Combine Full -Lock
-Set-TaskbarOptions -Size Small -Dock Bottom -Combine Full -AlwaysShowIconsOn
+Set-TaskbarOptions -Size Small -Dock Bottom -Combine Always -Lock
+Set-TaskbarOptions -Size Small -Dock Bottom -Combine Always -AlwaysShowIconsOff
 
 Set-ItemProperty -Path HKLM:\Software\Microsoft\Windows\CurrentVersion\AppModelUnlock -Name AllowDevelopmentWithoutDevLicense -Value 1
 
